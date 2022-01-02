@@ -13,30 +13,56 @@
 </head>
 <body>
     <header id="header">
-        <img src="https://lh3.googleusercontent.com/pw/AM-JKLXNJDknVQnGcGwY_7RZ7DulENUg910vEhoxIJx2H67kfZW2M4e428EQnekizkmGj-uRORn1yvKKT_JDFwm-Xr7zhcqCCaYn0782C-qYPLa4bo6LIVyDvNf0huhhAFLyfU_kugqIoRInDJJPNDxkD9Vy=w361-h67-no?authuser=0" id="header-img">
+        <a href="index.html"><img src="https://lh3.googleusercontent.com/pw/AM-JKLXNJDknVQnGcGwY_7RZ7DulENUg910vEhoxIJx2H67kfZW2M4e428EQnekizkmGj-uRORn1yvKKT_JDFwm-Xr7zhcqCCaYn0782C-qYPLa4bo6LIVyDvNf0huhhAFLyfU_kugqIoRInDJJPNDxkD9Vy=w361-h67-no?authuser=0" id="header-img"></a>
         <nav id="nav-bar">
             <ul>
-                <li class="nav-links"><a href="">What we do?</a></li>
-                <li class="nav-links"><a href="">Our Services</a></li>
-                <li class="nav-links"><a href="">Contact us</a></li>
+                <li class="nav-link" href="#video"><a href="#video">What we do?</a></li>
+                <li class="nav-link" href="#card-list"><a href="#card-list">Our Services</a></li>
+                <li class="nav-link" href="#cta"><a href="#cta">Contact us</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div id="about-us">
+        <section id="about-us">
             <div id="text">
                 <h1>A Provider for your access to Space</h1>
                 <p>Xploratech is a Space Launch provider which founded by our curiosity. <br> We’re motivated by the enormous impact we can have on Earth by<br>making it easier to get to space and to do incredible things there.</p>
             </div>
             <img src="https://cdn.mos.cms.futurecdn.net/ahwaFEazMNdecv6vvkN4ai.jpg" id="about-us-img">
+        </section>
+        <div id="embed">
+            <iframe src="https://www.youtube.com/embed/TeVbYCIFVa8" id="video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <div id="video">
-            <iframe src="https://www.youtube.com/embed/TeVbYCIFVa8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-            <input type="email" id="email" placeholder="Type email here">
-            <button type="submit" id="submit">Submit</button>
-        </form>
+        <section id="card-list">
+            <div class="card">
+                <img src="https://spacenews.com/wp-content/uploads/2021/03/crewdragon-cupola.jpg">
+                <h2>Cargo & Payload Services</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn.mos.cms.futurecdn.net/iHrCGU593wYRQ8F8Pr64CJ.jpg">
+                <h2>Human Spaceflight</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </section>
+        <section id="cta">
+            <h1>Contact us for more info</h1>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input type="email" id="email" placeholder="Type email here" name="email">
+                <input type="submit" id="submit"></input>
+            </form>
+        </section>
     </main>
+    <footer>
+        <h4>About me</h4>
+        <p>Hey, i'm Dhaffa Agus, A person who likes to do & learn code</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/DhaffaAgus09/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/DhaffaAgus"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/dhaffaagus_/?hl=en"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/dhaffa-agus/"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>Made with <i class="far fa-heart"></i> by Dhaffa Agus</p>
+    </footer>
 </body>
 </html>
