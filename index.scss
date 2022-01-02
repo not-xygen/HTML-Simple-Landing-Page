@@ -1,0 +1,105 @@
+$gray : hsl(0, 0%, 20%);
+$grayish : hsl(0, 0%, 15%);
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    color: $grayish;
+
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        padding: 20px 0;
+        background-color: $gray;
+
+        #header-img {
+            height: 50px;
+        }
+
+        nav {
+            color: white;
+            display: flex;
+            align-items: center;
+
+            ul {  
+                li {               
+                    display: inline-block;
+                    padding: 0 15px;
+                    list-style-type: none;
+                    position: relative;
+
+                    ::after {
+                        content: '';
+                        width: 0%;
+                        border-radius: 5px;
+                        height: 3px;
+                        background: white;
+                        display: block;
+                        margin: auto;
+                        transition: 0.5s;
+                    }
+
+                    :hover::after {
+                        width: 100%;
+                    }
+
+                    a {
+                        color: white;
+                        font-weight: 600;
+                        text-decoration: none
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        margin: 0 300px;
+        
+        #about-us {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 0;
+
+            img {
+                height: 350px;
+                border-radius: 20px;
+            }
+        }
+
+        #video {
+            display: flex;
+            justify-content: center;
+
+            iframe {
+                width: 1000px;
+                height: 500px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        main {
+            margin: 0;
+            
+            #about-us {
+                flex-direction: column;
+                img {
+                    width: 100vw;
+                }
+            }
+
+            #video {
+                iframe {
+                    width: 100vw;
+                }
+            }
+        }
+    }
+}
