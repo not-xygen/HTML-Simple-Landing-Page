@@ -28,7 +28,6 @@ body {
                 height: 50px;
             }
         }
-        
 
         nav {
             color: white;
@@ -69,11 +68,10 @@ body {
     }
 
     main {
-        margin: 0 300px;
         
         #about-us {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
             margin-top: 100px;
             padding: 50px 0;
@@ -202,21 +200,67 @@ body {
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
     body {
+        
         main {
-            margin: 0;
             
             #about-us {
                 flex-direction: column;
                 img {
                     width: 100vw;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        
+        main {
+
+            header {
+
+                a {
+            
+                    #header-img {
+                        height: 20px;
+                    }
+                }
+            }
+            
+            #about-us {
+                flex-direction: column;
+                img {
+                    width: 100vw;
+                    height: auto;
+                }
+                
+                #text {
+                    padding: 20px 20px;
                 }
             }
 
             #video {
                 iframe {
                     width: 100vw;
+                }
+            }
+
+            #card-list {
+                flex-direction: column;
+            }
+
+            #cta {
+
+                #email {
+                    width: 400px;
+                }
+
+                #submit {
+                    height: 150px;
                 }
             }
         }
